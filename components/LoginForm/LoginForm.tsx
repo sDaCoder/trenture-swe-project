@@ -8,7 +8,7 @@ import { Input } from "../ui/input"
 const LoginForm = () => {
     return (
         <>
-            <Card className="w-full max-w-sm">
+            <Card className="w-full max-w-sm bg-transparent backdrop-blur-xl">
                 <CardHeader>
                     <CardTitle>Login to your account</CardTitle>
                     <CardDescription>
