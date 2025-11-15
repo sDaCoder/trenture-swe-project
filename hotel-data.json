@@ -1,0 +1,490 @@
+[
+    {
+        "id": 1,
+        "name": "The Oberoi Grand",
+        "location": "Kolkata, India",
+        "address": "15 Jawaharlal Nehru Road, Kolkata 700013",
+        "rating": 4.8,
+        "pricePerNight": 14500,
+        "cuisineType": [
+            "Indian",
+            "Continental",
+            "Chinese"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Deluxe Suite",
+        "availableRooms": 8,
+        "amenities": [
+            "Free WiFi",
+            "Pool",
+            "Spa",
+            "Airport Shuttle",
+            "Gym",
+            "Breakfast Included"
+        ],
+        "description": "Located in the heart of Kolkata, The Oberoi Grand combines classical architecture with modern luxury, offering a serene escape amid the city's bustle.",
+        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+        "contact": {
+            "phone": "+91-33-2249-2323",
+            "email": "reservations@oberoigrand.com"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Taj Lake Palace",
+        "location": "Udaipur, India",
+        "address": "Pichola Lake, Udaipur 313001",
+        "rating": 4.9,
+        "pricePerNight": 26000,
+        "cuisineType": [
+            "Rajasthani",
+            "Mughlai",
+            "Italian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Luxury Lake View",
+        "availableRooms": 5,
+        "amenities": [
+            "Lake View",
+            "Boat Transfer",
+            "Fine Dining",
+            "Spa",
+            "Private Balcony"
+        ],
+        "description": "A former royal palace floating on Lake Pichola, Taj Lake Palace offers unmatched luxury with breathtaking views and regal service.",
+        "imageUrl": "https://images.unsplash.com/photo-1735568958809-82f7696a276a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1363",
+        "contact": {
+            "phone": "+91-294-2428800",
+            "email": "info@tajlakepalace.com"
+        }
+    },
+    {
+        "id": 3,
+        "name": "The Leela Palace",
+        "location": "New Delhi, India",
+        "address": "Diplomatic Enclave, Chanakyapuri, New Delhi 110023",
+        "rating": 4.7,
+        "pricePerNight": 17500,
+        "cuisineType": [
+            "Indian",
+            "Japanese",
+            "Italian"
+        ],
+        "personsPerRoom": 3,
+        "roomType": "Premier Room",
+        "availableRooms": 10,
+        "amenities": [
+            "Free WiFi",
+            "Airport Pickup",
+            "Rooftop Pool",
+            "Spa",
+            "Conference Room"
+        ],
+        "description": "An opulent 5-star hotel combining Indian grandeur with contemporary luxury, ideal for both business and leisure stays.",
+        "imageUrl": "https://images.unsplash.com/photo-1603428760740-c0089e3760f2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740",
+        "contact": {
+            "phone": "+91-11-39331234",
+            "email": "reservations@theleela.com"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Radisson Blu Resort",
+        "location": "Goa, India",
+        "address": "Cavelossim Beach, Mobor, Salcete, Goa 403731",
+        "rating": 4.5,
+        "pricePerNight": 9800,
+        "cuisineType": [
+            "Goan",
+            "Seafood",
+            "Continental"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Beach View Deluxe",
+        "availableRooms": 15,
+        "amenities": [
+            "Private Beach",
+            "Bar",
+            "Spa",
+            "Fitness Center",
+            "Poolside Restaurant"
+        ],
+        "description": "A beachfront resort with Portuguese-style architecture offering a relaxing retreat with luxury amenities and ocean views.",
+        "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+        "contact": {
+            "phone": "+91-832-2713333",
+            "email": "goa@radissonblu.com"
+        }
+    },
+    {
+        "id": 5,
+        "name": "JW Marriott Sahar",
+        "location": "Mumbai, India",
+        "address": "IA Project Road, Andheri East, Mumbai 400099",
+        "rating": 4.6,
+        "pricePerNight": 12500,
+        "cuisineType": [
+            "Indian",
+            "Thai",
+            "Italian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Executive Room",
+        "availableRooms": 12,
+        "amenities": [
+            "Spa",
+            "Airport Shuttle",
+            "Bar",
+            "Restaurant",
+            "Free WiFi",
+            "Conference Room"
+        ],
+        "description": "A luxury business hotel near Mumbai Airport featuring fine dining, elegant rooms, and world-class amenities for modern travelers.",
+        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+        "contact": {
+            "phone": "+91-22-68828888",
+            "email": "reservations@jwmarriottmumbai.com"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Evolve Back Resort",
+        "location": "Coorg, India",
+        "address": "Karadigodu Post, Siddapura, Coorg 571253",
+        "rating": 4.9,
+        "pricePerNight": 19500,
+        "cuisineType": [
+            "Coorgi",
+            "Indian",
+            "Continental"
+        ],
+        "personsPerRoom": 3,
+        "roomType": "Heritage Pool Villa",
+        "availableRooms": 6,
+        "amenities": [
+            "Private Pool",
+            "Nature Trails",
+            "Ayurvedic Spa",
+            "Organic Dining"
+        ],
+        "description": "Nestled amidst coffee plantations, this eco-luxury resort offers serene views, private villas, and curated experiences in the heart of Coorg.",
+        "imageUrl": "https://images.unsplash.com/photo-1723516908282-b3c795e9416a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
+        "contact": {
+            "phone": "+91-8272-258481",
+            "email": "info@evolveback.com"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Novotel Hyderabad Convention Centre",
+        "location": "Hyderabad, India",
+        "address": "HITEC City, Hyderabad 500081",
+        "rating": 4.3,
+        "pricePerNight": 8500,
+        "cuisineType": [
+            "South Indian",
+            "Continental",
+            "Asian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Standard Room",
+        "availableRooms": 20,
+        "amenities": [
+            "Pool",
+            "Bar",
+            "Free WiFi",
+            "Parking",
+            "Fitness Center"
+        ],
+        "description": "A modern business hotel located near Hyderabad’s tech hub, featuring comfortable rooms and access to the city’s main attractions.",
+        "imageUrl": "https://images.unsplash.com/photo-1721818218524-83693b2623b7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1301",
+        "contact": {
+            "phone": "+91-40-66824422",
+            "email": "reservations@novotelhyderabad.com"
+        }
+    },
+    {
+        "id": 8,
+        "name": "ITC Gardenia",
+        "location": "Bangalore, India",
+        "address": "No.1 Residency Road, Bangalore 560025",
+        "rating": 4.6,
+        "pricePerNight": 14000,
+        "cuisineType": [
+            "Indian",
+            "Japanese",
+            "Italian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Executive Club",
+        "availableRooms": 9,
+        "amenities": [
+            "Spa",
+            "Rooftop Pool",
+            "Bar",
+            "Gym",
+            "Fine Dining"
+        ],
+        "description": "An eco-luxury hotel blending sustainable practices with premium hospitality, situated in the heart of Bangalore.",
+        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+        "contact": {
+            "phone": "+91-80-22119898",
+            "email": "reservations@itchotels.in"
+        }
+    },
+    {
+        "id": 9,
+        "name": "The Lalit Jaipur",
+        "location": "Jaipur, India",
+        "address": "Jagatpura Road, Near Jawahar Circle, Jaipur 302017",
+        "rating": 4.4,
+        "pricePerNight": 9000,
+        "cuisineType": [
+            "Rajasthani",
+            "Continental"
+        ],
+        "personsPerRoom": 3,
+        "roomType": "Luxury Room",
+        "availableRooms": 18,
+        "amenities": [
+            "Pool",
+            "Spa",
+            "Bar",
+            "Free WiFi",
+            "Banquet Hall"
+        ],
+        "description": "A modern hotel reflecting Rajasthan’s royal heritage, offering spacious rooms and luxurious amenities near the airport.",
+        "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+        "contact": {
+            "phone": "+91-141-5197777",
+            "email": "info@thelalitjaipur.com"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Sterling Ooty Fern Hill",
+        "location": "Ooty, India",
+        "address": "73, Kundah House Road, Fern Hill, Ooty 643004",
+        "rating": 4.2,
+        "pricePerNight": 7500,
+        "cuisineType": [
+            "South Indian",
+            "Chinese",
+            "Continental"
+        ],
+        "personsPerRoom": 4,
+        "roomType": "Family Suite",
+        "availableRooms": 12,
+        "amenities": [
+            "Mountain View",
+            "Kids Play Area",
+            "Bonfire",
+            "Free Breakfast"
+        ],
+        "description": "A scenic hill resort surrounded by tea gardens, offering cozy stays and breathtaking views of the Nilgiris.",
+        "imageUrl": "https://images.unsplash.com/photo-1752876056640-9f447dc187e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=776",
+        "contact": {
+            "phone": "+91-423-2444455",
+            "email": "reservations@sterlinghotels.com"
+        }
+    },
+    {
+        "id": 11,
+        "name": "The Windflower Resort & Spa",
+        "location": "Mysore, India",
+        "address": "Maharanapratap Road, Mysore 570010",
+        "rating": 4.5,
+        "pricePerNight": 8800,
+        "cuisineType": [
+            "South Indian",
+            "Continental"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Spa Suite",
+        "availableRooms": 7,
+        "amenities": [
+            "Spa",
+            "Yoga Center",
+            "Pool",
+            "Free WiFi",
+            "Restaurant"
+        ],
+        "description": "A peaceful retreat near Chamundi Hills offering spa treatments, yoga sessions, and a rejuvenating stay experience.",
+        "imageUrl": "https://images.unsplash.com/photo-1679491556229-784d3b399f7c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=627",
+        "contact": {
+            "phone": "+91-821-2522500",
+            "email": "info@thewindflower.com"
+        }
+    },
+    {
+        "id": 12,
+        "name": "The Tamara",
+        "location": "Kodaikanal, India",
+        "address": "Vilpatti Village, Kodaikanal 624101",
+        "rating": 4.8,
+        "pricePerNight": 16500,
+        "cuisineType": [
+            "South Indian",
+            "Asian",
+            "Continental"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Luxury Cottage",
+        "availableRooms": 5,
+        "amenities": [
+            "Private Deck",
+            "Nature Walks",
+            "Organic Cuisine",
+            "Spa"
+        ],
+        "description": "A luxury eco-resort offering panoramic valley views, nestled in the lush hills of Kodaikanal.",
+        "imageUrl": "https://images.unsplash.com/photo-1615874959474-d609969a20ed",
+        "contact": {
+            "phone": "+91-4542-247999",
+            "email": "reservations@thetamarakodaikanal.com"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Holiday Inn Chandigarh Panchkula",
+        "location": "Chandigarh, India",
+        "address": "City Centre, Sector 3, Panchkula 134109",
+        "rating": 4.3,
+        "pricePerNight": 7800,
+        "cuisineType": [
+            "North Indian",
+            "Italian",
+            "Asian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Executive King Room",
+        "availableRooms": 14,
+        "amenities": [
+            "Gym",
+            "Pool",
+            "Bar",
+            "Restaurant",
+            "Conference Facilities"
+        ],
+        "description": "A modern hotel perfect for business and leisure, offering contemporary rooms and dining near Chandigarh city center.",
+        "imageUrl": "https://images.unsplash.com/photo-1531003300514-1976481c521e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740",
+        "contact": {
+            "phone": "+91-172-6651515",
+            "email": "reservations@holidayinnchandigarh.com"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Vivanta by Taj",
+        "location": "Pune, India",
+        "address": "No. 7, Baner Road, Pune 411045",
+        "rating": 4.4,
+        "pricePerNight": 11200,
+        "cuisineType": [
+            "Indian",
+            "European",
+            "Pan-Asian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Business Suite",
+        "availableRooms": 11,
+        "amenities": [
+            "Rooftop Pool",
+            "Bar",
+            "Free WiFi",
+            "Gym",
+            "Conference Room"
+        ],
+        "description": "A stylish hotel with modern amenities, offering business and leisure travelers a premium experience in Pune’s tech district.",
+        "imageUrl": "https://images.unsplash.com/photo-1729371768238-b932ec900eef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+        "contact": {
+            "phone": "+91-20-66833333",
+            "email": "info@vivantapune.com"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Marriott Resort & Spa",
+        "location": "Jaisalmer, India",
+        "address": "Sam Road, Jaisalmer 345001",
+        "rating": 4.8,
+        "pricePerNight": 21000,
+        "cuisineType": [
+            "Rajasthani",
+            "North Indian",
+            "Mediterranean"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Royal Desert Villa",
+        "availableRooms": 4,
+        "amenities": [
+            "Desert Safari",
+            "Pool",
+            "Spa",
+            "Private Terrace",
+            "Cultural Evenings"
+        ],
+        "description": "Experience the royal desert charm with luxury villas overlooking the sand dunes of Jaisalmer.",
+        "imageUrl": "https://images.unsplash.com/photo-1614704766845-5253413d32af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740",
+        "contact": {
+            "phone": "+91-2992-666666",
+            "email": "reservations@marriottjaisalmer.com"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Ginger Hotel",
+        "location": "Ahmedabad, India",
+        "address": "Drive-In Road, Memnagar, Ahmedabad 380052",
+        "rating": 4.0,
+        "pricePerNight": 4200,
+        "cuisineType": [
+            "Gujarati",
+            "North Indian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Standard Room",
+        "availableRooms": 22,
+        "amenities": [
+            "Free WiFi",
+            "Parking",
+            "Restaurant",
+            "Laundry Service"
+        ],
+        "description": "A budget-friendly hotel providing comfort and convenience for both business and leisure travelers.",
+        "imageUrl": "https://images.unsplash.com/photo-1756679206445-d58547cc0ac1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+        "contact": {
+            "phone": "+91-79-66033333",
+            "email": "info@gingerhotels.com"
+        }
+    },
+    {
+        "id": 17,
+        "name": "Ananda in the Himalayas",
+        "location": "Rishikesh, India",
+        "address": "Narendranagar, Tehri Garhwal 249175",
+        "rating": 5.0,
+        "pricePerNight": 38000,
+        "cuisineType": [
+            "Ayurvedic",
+            "Organic",
+            "Indian"
+        ],
+        "personsPerRoom": 2,
+        "roomType": "Palace View Suite",
+        "availableRooms": 3,
+        "amenities": [
+            "Yoga Retreat",
+            "Spa",
+            "Meditation Hall",
+            "Ayurvedic Meals",
+            "Mountain View"
+        ],
+        "description": "A world-renowned luxury wellness retreat offering rejuvenation through Ayurveda, yoga, and meditation in the serene Himalayas.",
+        "imageUrl": "https://images.unsplash.com/photo-1601979031925-424e53b6caaa",
+        "contact": {
+            "phone": "+91-135-3911111",
+            "email": "reservations@anandaspa.com"
+        }
+    }
+]

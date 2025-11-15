@@ -2,7 +2,6 @@
 import { motion } from 'motion/react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-import { ThemeToggle } from '../theme-toggler/theme-toggler'
 
 const HeroSection = () => {
   return (
@@ -17,7 +16,7 @@ const HeroSection = () => {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <div className="md:text-9xl font-boldtext-center font-serif text-5xl italic text-foreground">
           Trenture®
         </div>

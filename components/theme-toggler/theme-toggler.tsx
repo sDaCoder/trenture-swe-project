@@ -13,6 +13,7 @@ import {
 
 export function ThemeToggle() {
     const { theme, setTheme, resolvedTheme } = useTheme()
+    console.log("ThemeToggle rendered on client")
 
     return (
         <DropdownMenu>
