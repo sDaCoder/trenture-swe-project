@@ -29,7 +29,7 @@ const HotelCard: React.FC<{ hotel: Hotel }> = ({ hotel }) => {
 
     return (
         <>
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full">
                 <div className="relative h-48 bg-muted overflow-hidden">
                     <img
                         src={hotel.imageUrl || "/placeholder.svg"}
@@ -42,14 +42,14 @@ const HotelCard: React.FC<{ hotel: Hotel }> = ({ hotel }) => {
                 </div>
 
                 <CardHeader className="pb-3">
-                    <CardTitle className="text-xl">{hotel.name}</CardTitle>
-                    <CardDescription className="text-sm flex items-center gap-1">
-                        <MapPin size={14} />
-                        {hotel.location}
+                    <CardTitle className="text-xl truncate">{hotel.name}</CardTitle>
+                    <CardDescription className="text-sm flex items-center gap-1 truncate">
+                        <MapPin size={14} className="flex-shrink-0" />
+                        <span className="truncate">{hotel.location}</span>
                     </CardDescription>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 flex-1 flex flex-col">
                     <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
                             {[...Array(5)].map((_, i) => (
@@ -71,7 +71,7 @@ const HotelCard: React.FC<{ hotel: Hotel }> = ({ hotel }) => {
                                 <DoorOpen size={14} />
                                 Room Type:
                             </span>
-                            <span className="font-medium">{hotel.roomType}</span>
+                            <span className="font-medium truncate ml-2">{hotel.roomType}</span>
                         </div>
                         <div className="flex items-center justify-between text-sm">
                             <span className="text-muted-foreground flex items-center gap-1">
@@ -89,11 +89,14 @@ const HotelCard: React.FC<{ hotel: Hotel }> = ({ hotel }) => {
                     <div className="space-y-2">
                         <p className="text-xs font-semibold text-muted-foreground">Cuisine:</p>
                         <div className="flex flex-wrap gap-2">
-                            {hotel.cuisineType.map((cuisine) => (
-                                <span key={cuisine} className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">
+                            {hotel.cuisineType.slice(0, 2).map((cuisine) => (
+                                <span key={cuisine} className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded truncate">
                                     {cuisine}
                                 </span>
                             ))}
+                            {hotel.cuisineType.length > 2 && (
+                                <span className="text-xs text-muted-foreground px-2 py-1">+{hotel.cuisineType.length - 2} more</span>
+                            )}
                         </div>
                     </div>
 
@@ -101,7 +104,7 @@ const HotelCard: React.FC<{ hotel: Hotel }> = ({ hotel }) => {
                         <p className="text-xs font-semibold text-muted-foreground">Amenities:</p>
                         <div className="flex flex-wrap gap-2">
                             {hotel.amenities.slice(0, 3).map((amenity) => (
-                                <span key={amenity} className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded">
+                                <span key={amenity} className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded truncate">
                                     {amenity}
                                 </span>
                             ))}
@@ -111,7 +114,7 @@ const HotelCard: React.FC<{ hotel: Hotel }> = ({ hotel }) => {
                         </div>
                     </div>
 
-                    <Button onClick={() => router.push(`/plans/${hotel.id}`)} className="w-full">
+                    <Button onClick={() => router.push(`/plans/${hotel.id}`)} className="w-full mt-auto">
                         Book Now
                     </Button>
                 </CardContent>

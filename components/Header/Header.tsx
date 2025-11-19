@@ -3,6 +3,7 @@ import { MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, Navbar, Nav
 import { useState } from "react";
 import { ThemeToggle } from "../theme-toggler/theme-toggler";
 import Link from "next/link";
+import { Home, Plane } from "lucide-react";
 
 const Header = () => {
 
@@ -10,10 +11,12 @@ const Header = () => {
         {
             name: "Home",
             link: "/",
+            icon: Home
         },
         {
             name: "Our Plans",
             link: "/plans",
+            icon: Plane
         },
         // {
         //     name: "Contact",
@@ -31,7 +34,7 @@ const Header = () => {
                     <NavBody>
                         <NavbarLogo />
                         <NavItems items={navItems} />
-                        <div className="flex items-center gap-4">
+                        <div className="relative z-20 flex items-center gap-4">
                             <NavbarButton variant="secondary">Login</NavbarButton>
                             <NavbarButton variant="primary">Signup</NavbarButton>
                             <ThemeToggle />
@@ -59,6 +62,7 @@ const Header = () => {
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="relative text-neutral-600 dark:text-neutral-300"
                                 >
+                                    <item.icon />
                                     <span className="block">{item.name}</span>
                                 </Link>
                             ))}
