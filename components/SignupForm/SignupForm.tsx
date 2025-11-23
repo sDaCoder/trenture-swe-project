@@ -6,38 +6,39 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui
 import { Field, FieldDescription, FieldGroup, FieldLabel } from "../ui/field"
 import { Input } from "../ui/input"
 import { SubmitHandler, useForm } from "react-hook-form";
-import axios from "axios"
 import { useState } from "react"
-import { useRouter } from "next/navigation"
+import axios from "axios"
 import { toast } from "sonner"
 import { LoaderCircle } from "lucide-react"
+import { useRouter } from "next/navigation"
 
-interface LoginInputs {
+interface SignupInputs {
+    name: string;
     email: string;
     password: string;
 }
 
-const LoginForm = () => {
+const SignupForm = () => {
 
-    const { 
+    const router = useRouter();
+    const {
         register,
         handleSubmit,
         reset,
         formState: { errors }
-    } = useForm<LoginInputs>();
+    } = useForm<SignupInputs>();
 
     const [isLoading, setIsLoading] = useState(false);
-    const router = useRouter();
 
-    const loginFormSubmit: SubmitHandler<LoginInputs> = async (data: LoginInputs) => {
+    const signupFormSubmit: SubmitHandler<SignupInputs> = async (signupData: SignupInputs) => {
         setIsLoading(true);
         try {
-            const res = await axios.post("/api/users/login", data);
+            const res = await axios.post("/api/users/signup", signupData);
             console.log(res.data)
+            toast.success(res.data.message)
             console.log("Form errors:", errors)
             reset()
-            toast.success(res.data.message)
-            router.push("/plans")
+            router.push("/login")
         } catch (error: any) {
             toast.error(error?.response?.data?.error)
             console.log(error)
@@ -50,43 +51,53 @@ const LoginForm = () => {
         <>
             <Card className="w-full max-w-sm bg-transparent backdrop-blur-xl">
                 <CardHeader>
-                    <CardTitle>Login to your account</CardTitle>
+                    <CardTitle>Signup to your account</CardTitle>
                     <CardDescription>
                         Enter your email below to login to your account
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <form onSubmit={handleSubmit(loginFormSubmit)}>
+                    <form onSubmit={handleSubmit(signupFormSubmit)}>
                         <FieldGroup>
+                            <Field>
+                                <FieldLabel htmlFor="name">Name</FieldLabel>
+                                <Input
+                                    {...register("name")}
+                                    id="name"
+                                    type="text"
+                                    placeholder="Enter your name"
+                                    required
+                                />
+                            </Field>
                             <Field>
                                 <FieldLabel htmlFor="email">Email</FieldLabel>
                                 <Input
+                                    {...register("email")}
                                     id="email"
                                     type="email"
                                     placeholder="m@example.com"
                                     required
-                                    {...register("email")}
                                 />
                             </Field>
                             <Field>
                                 <div className="flex items-center">
                                     <FieldLabel htmlFor="password">Password</FieldLabel>
-                                    <Link
-                                        href="#"
-                                        className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                                    >
-                                        Forgot your password?
-                                    </Link>
                                 </div>
-                                <Input id="password" type="password" required {...register("password")}/>
+                                <Input
+                                    {...register("password")}
+                                    id="password"
+                                    type="password"
+                                    placeholder="Enter your password"
+                                    required
+                                />
                             </Field>
                             <Field>
                                 <Button type="submit">
                                     {isLoading && <LoaderCircle className="mr-2 h-4 w-4 animate-spin" />}
-                                    {isLoading ? "Logging in..." : "Login"}
+                                    {isLoading ? "Signing up..." : "Sign Up"}
                                 </Button>
                                 <FieldDescription className="text-center">
-                                    Don&apos;t have an account? <Link href="/signup">Sign up</Link>
+                                    Already have an account? <Link href="/login">Log In</Link>
                                 </FieldDescription>
                             </Field>
                         </FieldGroup>
@@ -97,4 +108,4 @@ const LoginForm = () => {
     )
 }
 
-export default LoginForm
+export default SignupForm

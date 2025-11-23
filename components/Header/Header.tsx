@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ThemeToggle } from "../theme-toggler/theme-toggler";
 import Link from "next/link";
 import { Home, Plane } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
 
@@ -11,12 +12,10 @@ const Header = () => {
         {
             name: "Home",
             link: "/",
-            icon: Home
         },
         {
             name: "Our Plans",
             link: "/plans",
-            icon: Plane
         },
         // {
         //     name: "Contact",
@@ -25,6 +24,7 @@ const Header = () => {
     ];
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const router = useRouter()
 
     return (
         <>
@@ -35,8 +35,8 @@ const Header = () => {
                         <NavbarLogo />
                         <NavItems items={navItems} />
                         <div className="relative z-20 flex items-center gap-4">
-                            <NavbarButton variant="secondary">Login</NavbarButton>
-                            <NavbarButton variant="primary">Signup</NavbarButton>
+                            <NavbarButton onClick={() => router.push('/login')} variant="secondary">Login</NavbarButton>
+                            <NavbarButton onClick={() => router.push('/signup')} variant="primary">Signup</NavbarButton>
                             <ThemeToggle />
                         </div>
                     </NavBody>
@@ -62,7 +62,6 @@ const Header = () => {
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="relative text-neutral-600 dark:text-neutral-300"
                                 >
-                                    <item.icon />
                                     <span className="block">{item.name}</span>
                                 </Link>
                             ))}
