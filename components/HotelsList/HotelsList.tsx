@@ -29,7 +29,7 @@ interface HotelsListProps {
 const HotelsList: React.FC<HotelsListProps> = ({ hotels }) => {
     return (
         <>
-            <div className="max-w-7xl mx-auto px-4 py-12 my-18">
+            <div className="max-w-7xl mx-auto px-4 py-12 my-18 border-b">
                 <div className='md:space-y-1 my-4'>
                     <h1 className='md:text-5xl text-3xl font-bold'>Our Plans </h1>
                     <p className='text-xs'>Curated list of hotels made for you</p>
